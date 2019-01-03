@@ -197,38 +197,6 @@ void loop()
     delayMicroseconds(delValue);
   }
   
-  //-----------------------------------------------Drop it like it's hot--------------------------------------------------------
-  // now all the joints at 0deg:
-  /*digitalWrite(DIR5_PIN, LOW);
-  delValue=4000;
-  incValue=7;
-  accRate=530;
-  totSteps=90/dl5;
-  for (int i=0; i < totSteps; i++)
-  {
-   if (totSteps > (2*accRate + 1)){
-      if (i < accRate){
-        //acceleration
-        delValue = delValue - incValue;
-      } else if (i > (totSteps - accRate)){
-        //decceleration
-        delValue = delValue + incValue;
-      }
-    } else {
-      //no space for proper acceleration/decceleration
-      if (i < ((totSteps - (totSteps % 2))/2)){
-        //acceleration
-        delValue = delValue - incValue;
-      } else if (i > ((totSteps + (totSteps % 2))/2)){
-        //decceleration
-        delValue = delValue + incValue;
-      }
-    }
-    digitalWrite(PUL5_PIN, HIGH);
-    delayMicroseconds(delValue);
-    digitalWrite(PUL5_PIN, LOW);
-    delayMicroseconds(delValue);
-  }*/
   //--------------------------------------------------------GoGoGo-------------------
   curPos1=0.0;
   curPos2=0.0;
@@ -262,37 +230,6 @@ void loop()
   
   goStrightLine(J1, Jhome, 0.25e-4, 0.75e-10, 100);
   //--------------------------------------------------------GoGoGoBack---------------
-  /*digitalWrite(DIR5_PIN, HIGH);
-  delValue=4000;
-  incValue=7;
-  accRate=530;
-  totSteps=90/dl5;
-  for (int i=0; i < totSteps; i++)
-  {
-   if (totSteps > (2*accRate + 1)){
-      if (i < accRate){
-        //acceleration
-        delValue = delValue - incValue;
-      } else if (i > (totSteps - accRate)){
-        //decceleration
-        delValue = delValue + incValue;
-      }
-    } else {
-      //no space for proper acceleration/decceleration
-      if (i < ((totSteps - (totSteps % 2))/2)){
-        //acceleration
-        delValue = delValue - incValue;
-      } else if (i > ((totSteps + (totSteps % 2))/2)){
-        //decceleration
-        delValue = delValue + incValue;
-      }
-    }
-    digitalWrite(PUL5_PIN, HIGH);
-    delayMicroseconds(delValue);
-    digitalWrite(PUL5_PIN, LOW);
-    delayMicroseconds(delValue);
-  }*/
-  //-----------------------------------------------End--------------------------------------------------------------------------
   
   // come back from home position to fold position
   // joint #5
