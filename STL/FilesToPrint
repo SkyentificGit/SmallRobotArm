@@ -32,3 +32,4 @@ LegLeft.stl - x1 unit and x1 unit mirrored part
 Pulley42.stl - x1 unit
 Pulley56.stl - x1 unit
 Pulley100.stl - x1 unit
+Electronics.stl - support for the Arduino and TB6600 drivers for electronics
