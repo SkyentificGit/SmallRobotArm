@@ -139,7 +139,7 @@ void loop()
   delValue=4000;
   incValue=7;
   accRate=530;
-  totSteps=2862*2;
+  totSteps=6569;
   for (int i=0; i < totSteps; i++)
   {
    if (totSteps > (2*accRate + 1)){
@@ -170,7 +170,7 @@ void loop()
   delValue=4000;
   incValue=7;
   accRate=530;
-  totSteps=1202+90/dl5;
+  totSteps=90/dl5;
   for (int i=0; i < totSteps; i++)
   {
    if (totSteps > (2*accRate + 1)){
@@ -237,7 +237,7 @@ void loop()
   delValue=4000;
   incValue=7;
   accRate=530;
-  totSteps=1202+90/dl5;
+  totSteps=90/dl5;
   for (int i=0; i < totSteps; i++)
   {
    if (totSteps > (2*accRate + 1)){
@@ -268,7 +268,7 @@ void loop()
   delValue=4000;
   incValue=7;
   accRate=530;
-  totSteps=2862*2;
+  totSteps=6569;
   for (int i=0; i < totSteps; i++)
   {
    if (totSteps > (2*accRate + 1)){
